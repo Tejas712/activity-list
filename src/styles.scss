@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --primary: #00acc6;
+  --gray: #878988;
+  --gray-100: #e7e7e7;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+// Utils class
+
+.w-100 {
+  width: 100%;
+}
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.d-block {
+  display: block;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+// Materia styles
+
+.mdc-button {
+  --mdc-filled-button-container-color: #3eb097;
+  --mdc-filled-button-container-shape: 5px;
+}

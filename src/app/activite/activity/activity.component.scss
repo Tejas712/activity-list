@@ -1,0 +1,139 @@
+.activity {
+  position: relative;
+
+  .activity-item {
+    position: relative;
+    height: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    .time {
+      padding: 6px 16px 6px 0;
+      min-width: 90px;
+      flex-shrink: 0;
+    }
+
+    .desc {
+      padding: 6px 16px;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      width: 600px;
+      padding: 10px 20px 10px 40px;
+      margin-left: 40px;
+      background-color: var(--gray-100);
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    &:hover {
+      .point .activity-badge {
+        color: var(--primary);
+      }
+
+      .desc {
+        background-color: rgb(26 27 31 / 9%);
+      }
+    }
+
+    .timline-border {
+      width: 1px;
+      height: 100%;
+      background-color: var(--gray);
+      flex-shrink: 0;
+    }
+
+    .point {
+      justify-content: end;
+
+      .activity-badge {
+        width: 4px;
+        height: 4px;
+        border: 2px solid var(--gray);
+        padding: 20px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        position: relative;
+        left: 27px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+      }
+
+      .activity-border {
+        width: 2px;
+        height: 100%;
+        background-color: var(--gray);
+        flex-shrink: 0;
+      }
+    }
+
+    &:last-child {
+      .activity-border {
+        display: none !important;
+      }
+    }
+  }
+}
+
+textarea {
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  resize: none;
+  margin-bottom: 10px;
+  &:focus {
+    border: 2px solid #3eb097;
+  }
+}
+
+.type-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  .option {
+    width: 4px;
+    height: 4px;
+    border: 2px solid var(--gray);
+    padding: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .active {
+    border-color: var(--primary);
+    background-color: var(--primary);
+    .mat-icon {
+      color: #FFF;
+    }
+  }
+}
+
+.mat-icon {
+  overflow: unset;
+  color: var(--gray);
+}
+
+.actions{
+  width: 4px;
+  height: 4px;
+  padding: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  .mat-icon {
+    overflow: unset;
+    color: #FFF;
+  }
+}
